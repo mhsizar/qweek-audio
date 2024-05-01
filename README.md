@@ -27,3 +27,18 @@ git clone https://github.com/mhsizar/qweek-audio.git
 cd qweek-audio
 npm install
 npm start
+```
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- NodeJS
+- Express
+- MongoDB
+- React
+- Deepgram API for transcription
+- Gemini API for summarization and keyword extraction
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
