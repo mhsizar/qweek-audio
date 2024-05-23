@@ -8,26 +8,33 @@
 </head>
 <body>
     <div class="container">
+        <div id="upload-message"></div> <!-- To display success or error messages -->
+        <div id="audio-file-name"></div> <!-- To display the uploaded audio file name -->
+        <div id="replace-audio-file"></div> <!-- To replace the uploaded audio file -->
+
+        <!-- Drag & Drop Zone for file input -->
         <div id="dropZone" class="drop-zone">
             <p>Drag and drop an audio file here, or click to choose a file</p>
             <input type="file" id="audioUpload" accept="audio/*" hidden>
         </div>
+
+        <!-- Audio player for playback -->
         <audio id="audioPlayer" controls></audio>
+
+        <!-- Buttons for different actions -->
         <div class="button-row">
             <button id="transcriptBtn">Transcript</button>
             <button id="summaryBtn">Summary</button>
             <button id="importantPointsBtn">Important Points</button>
         </div>
+
+        <!-- Keywords bar with placeholder message -->
         <div id="keywordBar" class="keyword-bar">
-            <!-- Dummy Keywords -->
-            <span>#keyword1</span> 
-            <span>#keyword2</span> 
-            <span>#keyword3</span> 
-            <span>#keyword4</span>
-            <span>#keyword5</span> 
-            <span>#keyword6</span> 
-            <span>#keyword7</span>
+            <span id="keywords-message">Keywords from your audio will be displayed here.</span>
+            <div id="keywords-container"></div>
         </div>
+
+        <!-- Display output -->
         <div id="outputBox" class="output-box">
             <!-- This is where the outputs will be displayed -->
         </div>
